@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Formulario Viejuner</legend> <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Ingrese sus nombre" id="nombre"> <br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" placeholder="Ingrese sus apellidos" id="apellidos"> <br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" placeholder="Ingrese sus edad" id="edad"> <br><br>
+
+            <label>Sexo:</label>
+            <input type="radio" id="sexo-m" name="sexo" value="masculino">
+            <label for="sexo-m">Masculino</label>
+            <input type="radio" id="sexo-f" name="sexo" value="femenino">
+            <label for="sexo-f">Femenino</label><br><br>
+
+            <label for="viejo">¿Te sientes Viejuner?</label>
+            <input type="checkbox" placeholder="Ingrese sus edad" id="viejo"> <br><br>
+
+            <label for="vida">Escribe un poco sobre ti:</label><br>
+            <textarea placeholder="Cuentanos!" id="vida"></textarea> <br><br>
+
+            <label for="gmail">Gmail:</label>
+            <input type="email" id="gmail"> <br><br>
+
+            <label for="tele">Telefono:</label>
+            <input type="tel" id="tele"> <br><br>
+        </fieldset> <br><br>
+        
+    </form>
+
+    <form>
+
+        <fieldset>
+            <legend>Los ladronzuelos de bicicletas</legend>
+            <label for="fecha">Día del avistamiento:</label>
+            <input type="date" id="fecha>" <br><br><br>
+
+            <label for="tiempo">Hora del avistamiento:</label>
+            <input type="time" id="timepo"> <br><br>
+
+            <label for="color">Color de la bicicleta:</label>
+            <input type="color" id="color"> <br><br>
+
+            <label for="precio">Rango de precio:</label>
+            <input type="range" min="0" max="200" step="10" id="precio"> <br><br>
+
+            <label for="tipo">Tipo de bicicleta:</label>
+            <select name="bici">
+                <optgroup label="Paseo">
+                    <option>Señorial</option>
+                    <option>Anti-plebeyos</option>
+                    <option>PorEncimaDelHombro</option>
+                </optgroup>
+
+                <optgroup label="Montaña">
+                    <option>Gamusinos</option>
+                    <option>Hueleflores premium</option>
+                    <option>Fango lover</option>
+                </optgroup>
+                
+                <optgroup label="Carreras">
+                    <option>Metroymedio</option>
+                    <option>3 de la tarde. Fluorescente edition</option>
+                    <option>Grupitors</option>
+                </optgroup>
+            </select> <br><br>
+
+            <label for="accesorio">Accesorios de la bicicleta:</label><br>
+            <select name="bici" multiple size="5">
+                <option>Ruedines</option>
+                <option>Pegatinas</option>
+                <option>Cestita</option>
+                <option>Bomba de aire</option>
+                <option>Timbre</option>
+                <option>Foco</option>
+            </select><br><br>
+
+            <label for="marca">Marca de la bicicleta:</label><br>
+            <select name="marca"  size="5">
+                <option>specialized</option>
+                <option>trek</option>
+                <option>merida</option>
+                <option>scott</option>
+                <option>giant</option>
+                <option>cube</option>
+                <option>lapierre</option>
+                <option>orbea</option>
+                <option>cannondale</option>
+                <option>bmc</option>
+                <option>canyon</option>
+                <option>look</option>
+                <option>protek</option>
+                <option>megamo</option>
+                <option>pinarello</option>
+                <option>bianchi</option>
+                <option>bh</option>
+                <option>factor</option>
+                <option>ghost</option>
+                <option>cervélo</option>
+                <option>argon</option>
+            </select>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
