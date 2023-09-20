@@ -11,15 +11,15 @@
 
     <form>
         <fieldset>
-            <legend>Formulario Viejuner</legend> <br>
+            <legend >Formulario Viejuner</legend> <br>
             <label for="nombre">Nombre:</label>
-            <input type="text" placeholder="Ingrese sus nombre" id="nombre"> <br><br>
+            <input type="text" placeholder="Ingrese sus nombre" id="nombre" autofocus tabindex="1" required> <br><br>
 
             <label for="apellidos">Apellidos:</label>
-            <input type="text" placeholder="Ingrese sus apellidos" id="apellidos"> <br><br>
+            <input type="text" placeholder="Ingrese sus apellidos" id="apellidos" tabindex="2"> <br><br>
 
             <label for="edad">Edad:</label>
-            <input type="number" placeholder="Ingrese sus edad" id="edad"> <br><br>
+            <input type="number" placeholder="Ingrese sus edad" id="edad" tabindex="3"> <br><br>
 
             <label>Sexo:</label>
             <input type="radio" id="sexo-m" name="sexo" value="masculino">
@@ -31,14 +31,17 @@
             <input type="checkbox" placeholder="Ingrese sus edad" id="viejo"> <br><br>
 
             <label for="vida">Escribe un poco sobre ti:</label><br>
-            <textarea placeholder="Cuentanos!" id="vida"></textarea> <br><br>
+            <textarea placeholder="Cuentanos!" id="vida" tabindex="4"></textarea> <br><br>
 
             <label for="gmail">Gmail:</label>
-            <input type="email" id="gmail"> <br><br>
+            <input type="email" id="gmail" tabindex="5"> <br><br>
 
             <label for="tele">Telefono:</label>
-            <input type="tel" id="tele"> <br><br>
-        </fieldset> <br><br>
+            <input type="tel" id="tele" tabindex="6" pattern="[0-9]{9}" required> <br><br>
+        </fieldset> 
+
+        <p><input type="submit" value="Enviar"></p> 
+        <p><input type="reset" value="Restaurar"></p>
         
     </form>
 
@@ -114,8 +117,13 @@
                 <option>argon</option>
             </select>
         </fieldset>
+        
+        <p><input type="submit" value="Enviar"></p> 
+        <p><input type="reset" value="Restaurar"></p>
+
     </form>
 
+    
 
 </body>
 </html>
